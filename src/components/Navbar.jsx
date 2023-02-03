@@ -1,20 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import {ShoppingCart} from "phosphor-react"
-import "../components/Navbar.css"
- 
-const Navbar = () => {
+import React from "react";
+import { Link } from "react-router-dom";
+import { ShoppingCart } from "phosphor-react";
+import "./navbar.css";
+
+export const Navbar = () => {
   return (
-    <div className='navbar'>
-        <div className='links' >
-          <Link to="/">Shop</Link>
-          <Link to="/cart">
-            <ShoppingCart size={32} />
-          </Link>
-
-        </div>
+    <div className="navbar">
+      <div className="links">
+        <Link to="/"> Menu-Card </Link>
+        <Link to="/contact"> Contact </Link>
+        <Link to="/cart">
+          <ShoppingCart size={32} />
+        </Link>
+      </div>
     </div>
-  )
-}
-
-export default Navbar
+  );
+};
